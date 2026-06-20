@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+    --font-bilmond: var(--font-bilmond);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +24,57 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.shachiru-text {
+
+  -webkit-text-stroke: 1px #fff;
+
+  filter:
+    drop-shadow(0 4px 2px rgba(0, 0, 0, 0.15));
+    
+ background-color: #cececee3;
+  color: transparent;
+  text-shadow: 0px 4px 12px rgb(255, 255, 255);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+  animation: neonFlicker 6s forwards;        
+
+}
+
+
+
+@keyframes neonFlicker {
+  /* Initial white state */
+  0%,
+  8% {
+    text-shadow: 0px 4px 12px rgb(255, 255, 255);
+  }
+
+  /* Flicker off */
+  10% {
+    text-shadow: 0px 4px 12px rgb(79, 3, 84);
+  }
+
+  /* Flicker on */
+  14% {
+  text-shadow: 0px 4px 12px rgb(255, 255, 255);
+  }
+
+  /* Flicker off again */
+  18% {
+     text-shadow: 0px 4px 12px rgb(79, 3, 84);
+  }
+
+  /* Final neon ignition */
+  25% {
+     text-shadow: 0px 4px 12px rgb(255, 255, 255);
+  }
+
+  /* Stable purple gradient neon */
+  100% {
+   text-shadow: 0px 4px 12px rgb(79, 3, 84);
+  }
 }

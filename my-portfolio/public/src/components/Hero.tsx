@@ -68,9 +68,18 @@ export default function Hero() {
             HI I'M
           </h3>
 
-          <h1 className="bg-linear-to-r from-violet-600 via-purple-500 to-violet-400 bg-clip-text text-5xl font-black uppercase text-transparent drop-shadow-lg md:text-[100px]">
-            SHACHIRU
-          </h1>
+         <h1
+  className="
+     text-white
+    text-5xl md:text-[120px]
+    font-bilmond font-black uppercase
+    shachiru-text
+   
+   
+  "
+>
+  SHACHIRU
+</h1>
 
           <p className="mt-4 text-2xl font-semibold text-slate-800">
             Designer • Developer • Creator
