@@ -36,11 +36,11 @@ body {
     
  background-color: #cececee3;
   color: transparent;
-  text-shadow: 0px 4px 12px rgb(255, 255, 255);
+  text-shadow: 0px 0px 12px rgb(255, 255, 255);
   -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;
-  animation: neonFlicker 6s forwards;        
+  animation: neonFlicker 12s forwards;        
 
 }
 
@@ -49,32 +49,54 @@ body {
 @keyframes neonFlicker {
   /* Initial white state */
   0%,
-  8% {
-    text-shadow: 0px 4px 12px rgb(255, 255, 255);
+  30% {
+    text-shadow: 0px 0px 12px rgb(255, 255, 255);
+     background-color: #cececee3;
   }
 
   /* Flicker off */
-  10% {
-    text-shadow: 0px 4px 12px rgb(79, 3, 84);
+  31% {
+    text-shadow: 0px 0px 12px rgb(172, 94, 224);
+     background-color: #7B2CF5;
   }
 
   /* Flicker on */
-  14% {
-  text-shadow: 0px 4px 12px rgb(255, 255, 255);
+  44% {
+  text-shadow: 0px 0px 12px rgb(255, 255, 255);
+       background-color: #cececee3;
   }
 
   /* Flicker off again */
-  18% {
-     text-shadow: 0px 4px 12px rgb(79, 3, 84);
+  48% {
+     text-shadow: 0px 0px 12px rgb(172, 94, 224);
+         background-color: #7B2CF5;
   }
 
   /* Final neon ignition */
-  25% {
-     text-shadow: 0px 4px 12px rgb(255, 255, 255);
+  55% {
+     text-shadow: 0px 0px 12px rgb(255, 255, 255);
   }
 
   /* Stable purple gradient neon */
   100% {
-   text-shadow: 0px 4px 12px rgb(79, 3, 84);
+   text-shadow: 0px 0px 12px rgb(172, 94, 224);
+       background-color: #7B2CF5;
   }
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
 }
