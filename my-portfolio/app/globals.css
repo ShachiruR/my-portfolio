@@ -56,7 +56,7 @@ body {
 
   /* Flicker off */
   31% {
-    text-shadow: 0px 0px 12px rgb(108, 63, 179);
+    text-shadow: 0px 0px 12px rgb(160, 92, 216);
      background-color: #460f99;
   }
 
@@ -68,7 +68,7 @@ body {
 
   /* Flicker off again */
   48% {
-     text-shadow: 0px 0px 12px rgb(108, 63, 179);
+     text-shadow: 0px 0px 12px rgb(160, 92, 216);
          background-color: #460f99;
   }
 
@@ -79,7 +79,7 @@ body {
 
   /* Stable purple gradient neon */
   100% {
-   text-shadow: 0px 0px 12px rgb(108, 63, 179);
+   text-shadow: 0px 0px 12px rgb(160, 92, 216);
        background-color: #460f99;
   }
 }
