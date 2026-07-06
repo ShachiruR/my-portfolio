@@ -7,18 +7,18 @@ const Bottombar = () => {
         src="/images/curvedLeft.svg"
         alt=""
         width={80}
-        height={72}
-        className="h-18 w-auto -mr-1"
+        height={62}
+        className="h-[60px] w-auto -mr-1"
       />
 
-      <div className="h-18 w-full bg-[#13021D]" />
+      <div className="h-[60px] w-full bg-[#150420]" />
 
       <Image
         src="/images/curvedRight.svg"
         alt=""
         width={80}
-        height={72}
-        className="h-18 w-auto! -ml-1"
+        height={60}
+        className="h-[60px] w-auto! -ml-1 "
       />
     </div>
   );
