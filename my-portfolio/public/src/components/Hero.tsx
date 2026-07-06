@@ -1,190 +1,98 @@
+"use client";
+
 import Image from "next/image";
-import {
-  ArrowUpRight,
-  Code2,
-  Download,
-  Palette,
-  Rocket,
-  Sparkles,
-  User,
-} from "lucide-react";
+import { Code2, Rocket } from "lucide-react";
+import Bottombar from "./hero-components/BottomBar";
+import TopBar from "./hero-components/TopBar";
+import { useEffect } from "react";
 
-export default function Hero() {
+export default function Hero2() {
+  useEffect(() => {
+    console.log(window.innerWidth);
+  }, []);
   return (
-    <div className="relative min-h-screen overflow-hidden bg-linear-to-b from-[#faf8ff] via-white to-[#f6edff]">
-      {/* Background Glow */}
-      <div className="absolute -left-40 bottom-0 h-full w-[500px] rounded-full bg-purple-300/30 blur-3xl" />
-      <div className="absolute -right-40 bottom-0 h-full w-[500px] rounded-full bg-violet-300/30 blur-3xl" />
-
-      {/* Navbar */}
-      <div className="mx-auto max-w-7xl px-6 pt-6">
-        <nav className="flex h-20 items-center justify-between rounded-full border border-white/50 bg-white/70 px-10 shadow-lg backdrop-blur-xl">
-          <div className="text-5xl font-bold text-violet-600">S.</div>
-
-          <ul className="hidden gap-12 text-lg font-medium text-slate-700 lg:flex">
-            <li className="text-violet-600">Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Blog</li>
-            <li>Contact</li>
-          </ul>
-
-          <button className="flex items-center gap-2 rounded-full bg-linear-to-r from-violet-600 to-purple-500 px-8 py-3 text-white shadow-lg">
-            Contact Me
-            <ArrowUpRight size={18} />
-          </button>
-        </nav>
+    <section className="relative overflow-hidden rounded-[32px] bg-linear-to-b from-[#faf8ff] via-white to-[#f6edff] m-3 md:m-6 h-[calc(100vh-2rem)] py-18">
+      {/* Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -left-40 bottom-0 h-[500px] w-[500px] rounded-full bg-purple-300/20 blur-[120px]" />
+        <div className="absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-violet-300/20 blur-[120px]" />
       </div>
 
-      {/* Hero Content */}
-      <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-center px-6 text-center z-20">
-        {/* Left Image */}
-        <div className="absolute  z-10 left-0 top-36 hidden xl:block">
-          <Image
-            src="/images/painter.png"
-            alt=""
-            width={350}
-            height={350}
-            className="drop-shadow-2xl "
-          />
-        </div>
+      <TopBar />
 
-        {/* Right Image */}
-        <div className="absolute  z-10 right-0 top-30 hidden xl:block">
-          <Image
-            src="/images/tech-arm.png"
-            alt=""
-            width={390}
-            height={390}
-            className="drop-shadow-2xl"
-          />
-        </div>
-
+      <div className="relative flex flex-col items-center  justify-center bg-gray-600 h-full ">
         {/* Heading */}
-        <div className="z-20 mt-10">
-          <h3
-            className="
-    mb-2 text-5xl font-bold uppercase tracking-wider
-    text-[#ab2cf5] md:text-5xl font-bilmond
-    fade-up
-  "
-          >
-            HI I'M
-          </h3>
 
-          <h1
-            className="
-     text-white
-    text-5xl md:text-[120px]
-    font-bilmond font-black uppercase
-    shachiru-text
-   
-   
-  "
-          >
-            SHACHIRU
-          </h1>
+        <div className=" flex flex-col items-center justify-center w-full mt-4 ">
+          {/*  circles */}
 
-          <p
-            className="
-    mt-6
-    flex flex-wrap items-center justify-center gap-4
-    text-lg md:text-2xl
-    font-semibold
-    tracking-wide
-    text-purple-200
- S
-  "
-          >
-            <span className="flex items-center gap-2 rounded-full border border-purple-500/30 cursor-pointer bg-purple-500/10 px-4 py-2 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-purple-500/20">
-              <Palette className="h-5 w-5 text-purple-500 " />
-              <span className="bg-linear-to-r from-purple-500 to-fuchsia-500 bg-clip-text text-transparent">
-                Designer
-              </span>
-            </span>
+          <div className="absolute h-[150px] w-[150px] rounded-full     bg-[radial-gradient(circle,#E5CEF6_40%,transparent_65%)] " />
+          <div className="absolute h-[200px] w-[200px] rounded-full border border-[#eddff8ab]  " />
 
-            <span className="flex items-center gap-2 rounded-full border border-violet-500/30 cursor-pointer bg-violet-500/10 px-4 py-2 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-violet-500/20">
-              <Code2 className="h-5 w-5 text-violet-500  " />
-              <span className="bg-linear-to-r from-violet-500 to-purple-500 bg-clip-text text-transparent">
-                Developer
-              </span>
-            </span>
+          <div className="absolute h-[300px] w-[300px] rounded-full border-2 border-dashed border-[#eddff8ab]" />
 
-            <span className="flex items-center gap-2 rounded-full border border-fuchsia-500/30  cursor-pointer bg-fuchsia-500/10 px-4 py-2 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-fuchsia-500/20">
-              <Sparkles className="h-5 w-5 text-fuchsia-500 " />
-              <span className="bg-linear-to-r from-fuchsia-500 to-pink-500 bg-clip-text text-transparent">
-                Creator
-              </span>
-            </span>
-          </p>
-        </div>
+          <div className="absolute h-[400px] w-[400px] rounded-full border border-[#eddff8ab]  " />
 
-        {/* Bottom Laptop Character */}
-        <div className="relative mt-8">
-          {/* Circle Decoration */}
-          <div className="absolute left-1/2 top-1/2 h-[750px] w-[750px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-200" />
-          <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-200" />
-          <div className="absolute left-1/2 top-1/2 h-[450px] w-[450px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-100" />
-          <div className="absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-50" />
+          <div className="absolute h-[500px] w-[500px] rounded-full border-2 border-dashed border-[#eddff8ab] " />
 
-          <Image
-            src="/images/laptop-person.png"
-            alt=""
-            width={350}
-            height={350}
-            className="relative z-10"
-          />
-        </div>
+          <div className="relative z-10 flex items-center ">
+            <IconCard>
+              <Code2 className="h-7 w-7 md:h-8 md:w-8 text-purple-800" />
+            </IconCard>
 
-        {/* Experience Card */}
-        <div className="absolute bottom-8 left-10 hidden rounded-3xl bg-white/70 p-6 shadow-xl backdrop-blur-xl lg:block">
-          <div className="flex items-center gap-4">
-            <div className="rounded-full bg-violet-100 p-4">
-              <User className="text-violet-600" />
-            </div>
+            <Image
+              src="/images/laptop-person.png"
+              alt="Developer"
+              width={420}
+              height={420}
+              priority
+              className="
+                h-auto
+                w-[220px]
+                sm:w-[280px]
+                md:w-[340px]
+                lg:w-[250px]
+              "
+            />
 
-            <div>
-              <h4 className="text-3xl font-bold  text-purple-700">5+</h4>
-              <p className="text-slate-500">Years Experience</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Projects Card */}
-        <div className="absolute bottom-8 right-10 hidden rounded-3xl bg-white/70 p-6 shadow-xl backdrop-blur-xl lg:block">
-          <div className="flex items-center gap-4">
-            <div className="rounded-full bg-violet-100 p-4">
-              <Rocket className="text-violet-600" />
-            </div>
-
-            <div>
-              <h4 className="text-3xl font-bold text-purple-700">50+</h4>
-              <p className="text-slate-500">Projects Completed</p>
-            </div>
+            <IconCard>
+              <Rocket className="h-5 w-5 md:h-6 md:w-6 text-purple-800" />
+            </IconCard>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-0 z-2 flex w-full items-end justify-center  overflow-hidden">
-        <div
-          className="
-      inline-block
-      text-[300px]
-      leading-[0.8]
-      font-extrabold
-      tracking-widest
-      text-[#ffffff19]
-      bg-clip-text
-      bg-linear-to-b
-      from-transparent
-      via-[#ffffff34]
-      to-white
-    "
-        >
-          EXPLORE
-        </div>
-      </div>
-    </div>
+      <Bottombar />
+    </section>
+  );
+}
+
+function IconCard({ children }: { children: React.ReactNode }) {
+  return (
+    <button
+      className="
+        flex
+        h-12
+        w-12
+        md:h-14
+        md:w-14
+        items-center
+        justify-center
+        rounded-2xl
+        bg-linear-to-br
+        from-white
+        via-purple-100
+        to-white
+        shadow-lg
+        ring-2
+        ring-white
+        transition
+        duration-300
+        hover:-translate-y-1
+        hover:rotate-6
+      "
+    >
+      {children}
+    </button>
   );
 }
