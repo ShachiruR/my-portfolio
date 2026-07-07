@@ -17,10 +17,8 @@ import Bottombar from "./hero-components/BottomBar";
 import TopBar from "./hero-components/TopBar";
 import { useEffect } from "react";
 
-export default function Hero2() {
-  useEffect(() => {
-    console.log(window.innerWidth);
-  }, []);
+export default function Hero() {
+ 
   return (
     <section className="relative overflow-hidden rounded-[32px] bg-linear-to-r from-[#EAD6FD] via-[#f8f3fc] to-[#EAD6FD] m-3 md:m-4 h-fit py-18 font-bilmond">
       {/* Background */}
