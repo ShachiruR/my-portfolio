@@ -10,7 +10,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-    --font-bilmond: var(--font-bilmond);
+  --font-bilmond: var(--font-bilmond);
+  --font-dancingScript: var(--font-dancingScript);
+
 }
 
 @media (prefers-color-scheme: dark) {

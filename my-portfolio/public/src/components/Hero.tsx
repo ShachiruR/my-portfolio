@@ -6,9 +6,12 @@ import {
   ChevronDown,
   Code2,
   Download,
+  MapPin,
   Palette,
   Rocket,
   Sparkles,
+  Star,
+  Users,
 } from "lucide-react";
 import Bottombar from "./hero-components/BottomBar";
 import TopBar from "./hero-components/TopBar";
@@ -19,12 +22,9 @@ export default function Hero2() {
     console.log(window.innerWidth);
   }, []);
   return (
-    <section className="relative overflow-hidden rounded-[32px] bg-linear-to-b from-[#faf8ff] via-white to-[#f6edff] m-3 md:m-4 h-fit py-18">
+    <section className="relative overflow-hidden rounded-[32px] bg-linear-to-r from-[#EAD6FD] via-[#f8f3fc] to-[#EAD6FD] m-3 md:m-4 h-fit py-18 font-bilmond">
       {/* Background */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -left-40 bottom-0 h-[500px] w-[500px] rounded-full bg-purple-300/20 blur-[120px]" />
-        <div className="absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-violet-300/20 blur-[120px]" />
-      </div>
+      <div className="absolute inset-0 overflow-hidden"></div>
 
       <TopBar />
 
@@ -34,18 +34,18 @@ export default function Hero2() {
         {/*  circles */}
 
         <div className="absolute h-[150px] w-[150px] rounded-full     bg-[radial-gradient(circle,#E5CEF6_40%,transparent_65%)] mt-36 " />
-        <div className="absolute h-[220px] w-[220px] rounded-full border border-[#eddff8ab] mt-36 " />
+        <div className="absolute h-[220px] w-[220px] rounded-full border border-[#ecd9faab] mt-36 " />
 
-        <div className="absolute h-[300px] w-[300px] rounded-full border-2 border-dashed border-[#eddff8ab] mt-36" />
+        <div className="absolute h-[300px] w-[300px] rounded-full border-2 border-dashed border-[#ecd9faab] mt-36" />
 
-        <div className="absolute h-[400px] w-[400px] rounded-full border border-[#eddff8ab] mt-36  " />
+        <div className="absolute h-[400px] w-[400px] rounded-full border border-[#ecd9faab] mt-36  " />
 
-        <div className="absolute h-[520px] w-[520px] rounded-full border-2 border-dashed border-[#eddff8ab] mt-36 " />
+        <div className="absolute h-[520px] w-[520px] rounded-full border-2 border-dashed border-[#ecd9faab] mt-36 " />
 
         <div className="z-20 flex items-center flex-col ">
           <h3
             className="
-    text-[28px] font-extrabold uppercase tracking-wider
+    text-[28px] font-bold uppercase tracking-wider
     text-[#400b5f]  font-bilmond leading-none mb-2
     fade-up
   "
@@ -135,6 +135,152 @@ export default function Hero2() {
         </div>
       </div>
 
+      <div className="absolute  z-10 left-32 top-42 hidden xl:block">
+        <Image
+          src="/images/painter.png"
+          alt=""
+          width={350}
+          height={350}
+          className="drop-shadow-2xl h-auto w-[260px]  animation-spin"
+        />
+
+        <div className="absolute -bottom-2 text-[#29033f] font-dancingScript">
+          <Image
+            src="/images/arrow-left.svg"
+            alt=""
+            width={390}
+            height={390}
+            className=" h-auto w-[40px]"
+          />
+          <span className="text-left text-[18px] leading-none">
+            <strong className="text-[#710b91] font-bold text-[20px]">
+              Crafting
+            </strong>{" "}
+            <br /> Pixel Perfect <br /> Designs
+          </span>
+        </div>
+      </div>
+      <div className="absolute  z-10 right-32 top-36 hidden xl:block">
+        <Image
+          src="/images/tech-arm.png"
+          alt=""
+          width={390}
+          height={390}
+          className="drop-shadow-2xl h-auto w-[300px]"
+        />
+        <div className="absolute -bottom-4  right-2 text-[#29033f] font-dancingScript">
+          <Image
+            src="/images/arrow-right.svg"
+            alt=""
+            width={390}
+            height={390}
+            className=" h-auto w-[40px]"
+          />
+          <span className="text-left text-[18px] leading-none">
+            <strong className="text-[#710b91] font-bold text-[20px]">
+              Building
+            </strong>{" "}
+            <br /> Scalable <br /> Solutions
+          </span>
+        </div>
+      </div>
+      <span
+        className="absolute left-2 top-1/2 hidden -translate-y-1/2 whitespace-nowrap text-[11px] font-semibold tracking-[0.35em] text-purple-800/60 xl:block"
+        style={{ writingMode: "vertical-rl" }}
+      >
+        DESIGN • BUILD • DEPLOY
+      </span>
+      <span
+        className="absolute right-2 top-1/2 hidden -translate-y-1/2 whitespace-nowrap text-[11px] font-semibold tracking-[0.35em] text-purple-800/60 xl:block"
+        style={{ writingMode: "vertical-rl" }}
+      >
+        INNOVATE • OPTIMIZE • INSPIRE
+      </span>
+
+      <div className="flex flex-col justify-between gap-5 lg:mt-10 lg:flex-row lg:items-end absolute bottom-24 left-32 z-10">
+        {/* about card */}
+        <div className="w-full max-w-[250px] rounded-3xl bg-white/60 p-5 shadow-sm ring-2 ring-white backdrop-blur  shadow-purple-300/50">
+          <div className="mb-2 flex items-center gap-2 text-xs font-bold tracking-wider text-[#7d4eaa]">
+            <span className="h-2 w-2 rounded-full bg-purple-700" /> ABOUT ME
+          </div>
+          <p className="text-[13px] leading-relaxed text-[#1a073d]">
+            Passionate developer who loves turning ideas into functional,
+            beautiful and user-friendly web applications.
+          </p>
+          <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
+            <span className="flex items-center gap-1 text-gray-600 text-[12px]">
+              <MapPin size={14} className="text-purple-500" /> Colombo
+            </span>
+            <span className="rounded-full bg-green-100 px-3 py-1 text-[12px] font-semibold text-green-700">
+              Available for work
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid z-10 w-full max-w-[300px] rounded-3xl bg-white/60  shadow-sm ring-2 ring-white backdrop-blur grid-cols-2  absolute bottom-24 right-32 overflow-hidden">
+        <StatCard
+          icon={<Sparkles className="h-4 w-4 text-purple-600" />}
+          value="30+"
+          label="Projects Completed"
+        />
+        <StatCard
+          icon={<Rocket className="h-4 w-4 text-purple-600" />}
+          value="2+"
+          label="Years of Experience"
+        />
+        <StatCard
+          icon={<Users className="h-4 w-4 text-purple-600" />}
+          value="20+"
+          label="Happy Clients"
+        />
+        <StatCard
+          icon={<Star className="h-4 w-4 text-purple-600" />}
+          value="5★"
+          label="Average Rating"
+        />
+      </div>
+
+      <div className="absolute top-0 left-0 opacity-30">
+        {" "}
+        <Image
+          src="/images/chekered.svg"
+          alt=""
+          width={260}
+          height={260}
+          className="h-[460px] w-auto!  "
+        />
+      </div>
+      <div className="absolute top-0 right-0 opacity-30 ">
+        {" "}
+        <Image
+          src="/images/chekered-left.svg"
+          alt=""
+          width={260}
+          height={260}
+          className="h-[460px] w-auto!  "
+        />
+      </div>
+      <div className="absolute bottom-0 left-0  ">
+        {" "}
+        <Image
+          src="/images/halftone-left.svg"
+          alt=""
+          width={260}
+          height={260}
+          className="h-[200px] w-auto!  "
+        />
+      </div>
+      <div className="absolute bottom-0 right-0  ">
+        {" "}
+        <Image
+          src="/images/halftone-right.svg"
+          alt=""
+          width={260}
+          height={260}
+          className="h-[200px] w-auto!  "
+        />
+      </div>
       <Bottombar />
     </section>
   );
@@ -167,5 +313,27 @@ function IconCard({ children }: { children: React.ReactNode }) {
     >
       {children}
     </button>
+  );
+}
+
+function StatCard({
+  icon,
+  value,
+  label,
+}: {
+  icon: React.ReactNode;
+  value: string;
+  label: string;
+}) {
+  return (
+    <div className="flex items-center p-3 gap-2">
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-purple-100">
+        {icon}
+      </span>
+      <div>
+        <p className="text-lg font-bold leading-none text-gray-900">{value}</p>
+        <p className="text-[11px] leading-tight text-gray-500">{label}</p>
+      </div>
+    </div>
   );
 }
