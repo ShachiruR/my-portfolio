@@ -1,4 +1,5 @@
 import About from "@/public/src/components/About";
+import ContactMeSection from "@/public/src/components/ContactMeSection";
 import Hero from "@/public/src/components/Hero";
 import MyTechSection from "@/public/src/components/MyTechSection";
 import ShowcaseSection from "@/public/src/components/ShowcaseSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <About />
       <MyTechSection />
       <ShowcaseSection />
+      <ContactMeSection />
     </div>
   );
 }

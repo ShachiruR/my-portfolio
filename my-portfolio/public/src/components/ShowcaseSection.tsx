@@ -60,17 +60,17 @@ const ShowcaseSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex w-full absolute top-50 z-10 flex-row items-center justify-center gap-2">
+      <div className="flex w-full absolute top-50 z-10 flex-row items-center justify-center gap-2  " >
         {" "}
         <Swiper
           modules={[]}
           slidesPerView="auto"
           spaceBetween={40}
-          className=" flex h-full w-full flex-row gap-2 overflow-visible!"
+          className=" flex h-full w-full flex-row gap-2"
         >
           {tech.map((item, index) => (
             <SwiperSlide
-              className="w-auto! justify-center overflow-visible"
+              className="w-auto! justify-center pb-4 "
               key={index}
             >
               <ProjectCard />
