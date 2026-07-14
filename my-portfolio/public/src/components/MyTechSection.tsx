@@ -34,7 +34,7 @@ const tech = [
 ];
 const MyTechSection: React.FC = () => {
   return (
-    <div className="relative flex w-full items-center justify-center bg-radial from-[#340e4686] font-bilmond to-[#240a3073] py-8 my-4 backdrop-blur-sm ">
+    <div className="relative flex w-full items-center justify-center bg-radial from-[#340e4686] font-bilmond to-[#240a3073] py-8 my-4 backdrop-blur-sm  ">
       <div className="flex w-full overflow-hidden px-4 py-2 lg:px-24">
         {" "}
         <Swiper
@@ -43,11 +43,9 @@ const MyTechSection: React.FC = () => {
           spaceBetween={60}
           loop={true}
           freeMode={true}
-        
           speed={4000}
           autoplay={{
             delay: 0,
-           
           }}
           className=" flex h-full w-full flex-row gap-8 overflow-visible!"
         >
@@ -97,7 +95,7 @@ const MyTechSection: React.FC = () => {
           <h2 className="text-3xl font-bold text-nowrap leading-none ">
             Tech <span className="text-purple-400 "> &nbsp;Stack</span>
           </h2>
-          <p className="text-sm md:text-base leading-relaxed text-gray-300 text-nowrap">
+          <p className="text-sm md:text-base leading-relaxed text-gray-300 text-nowrap hidden md:flex">
             Different Technologies Which I have worked with
           </p>
         </div>

@@ -19,11 +19,11 @@ import { useEffect } from "react";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden rounded-[32px] bg-linear-to-r from-[#EAD6FD] via-[#f8f3fc] to-[#EAD6FD] m-3 md:m-4 h-fit py-18 font-bilmond">
+    <section className="relative overflow-hidden md:rounded-[32px] bg-linear-to-r from-[#EAD6FD] via-[#f8f3fc] to-[#EAD6FD]  md:m-4 h-fit py-18 font-bilmond px-6 md:px-0">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden"></div>
 
-      <TopBar />
+   
 
       <div className="relative flex flex-col items-center  justify-center mt-3 ">
         {/* Heading */}
@@ -54,7 +54,7 @@ export default function Hero() {
             className="
      text-white
      leading-none
-    text-5xl md:text-[100px]
+    text-6xl md:text-[100px]
     font-bilmond font-black uppercase
     shachiru-text
    
@@ -64,11 +64,11 @@ export default function Hero() {
             SHACHIRU
           </h1>
 
-          <div className="font-bilmond text-[#2d004b] font-semibold">
+          <div className="font-bilmond text-[#2d004b] font-semibold text-center">
             I Build digital experiences that are fast, interactive & impactful
           </div>
           <div
-            className="flex flex-row gap-4 mt-4 rounded-[20px] items-center justify-center px-6 py-1 text-[14px] text-[#21033d]  bg-linear-to-br
+            className="flex flex-row gap-2 md:gap-4  flex-wrap mt-4 rounded-[20px] items-center justify-center px-6 py-1 text-[14px] text-[#21033d]  bg-linear-to-br
         from-white
         via-purple-100
         to-white font-medium

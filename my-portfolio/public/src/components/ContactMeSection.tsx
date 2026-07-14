@@ -9,7 +9,7 @@ import Link from "next/link";
 import { SocialIcons } from "@/public/assets/socialIcons";
 const ContactMeSection: React.FC = () => {
   return (
-    <div className="w-full  relative flex items-center justify-center py-12 font-bilmond container my-32">
+    <div className="w-full  relative flex items-center justify-center py-12 font-bilmond container lg:my-32 overflow-hidden">
       <div className="w-full h-full absolute top-0">
         <Image
           src={`/images/contact-mesh.svg`}
@@ -20,12 +20,14 @@ const ContactMeSection: React.FC = () => {
       </div>
       <div className="absolute top-10 left-1/2 -translate-x-1/2 flex flex-row items-start justify-center gap-4">
         <span
-          className="text-[120px] font-extrabold  text-transparent
+          className="text-[70px] md:text-[120px] font-extrabold  text-transparent
     [-webkit-text-stroke:1px_white] leading-none"
         >
           CONTACT
         </span>
-        <span className="text-[48px] font-extrabold leading-none">ME</span>
+        <span className="text-[36px] md:text-[48px] font-extrabold leading-none">
+          ME
+        </span>
       </div>
       <div className="relative z-10 flex flex-col  gap-4 items-center justify-center">
         {" "}
@@ -34,7 +36,7 @@ const ContactMeSection: React.FC = () => {
           alt="tech"
           width={300}
           height={300}
-          className="  h-auto w-[430px] "
+          className="  h-auto w-[350px] md:w-[430px] "
           style={{
             maskImage:
               "linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 92%) 18%, rgba(0, 0, 0, 79%) 30%, rgba(0, 0, 0, 65%) 51%, rgba(0, 0, 0, 52%) 61%, rgba(0, 0, 0, 0%) 100%);",
