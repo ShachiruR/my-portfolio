@@ -8,39 +8,48 @@ import "swiper/css/free-mode";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 const tech = [
-  { name: "Qatar Airways", code: "QR" },
-  { name: "Cathay Pacific Airways", code: "CX" },
-  { name: "Emirates", code: "EK" },
-  { name: "Kuwait Airways", code: "KU" },
-  { name: "Etihad Airways", code: "EY" },
-  { name: "Air China Limited", code: "CA" },
-  { name: "Singapore Airlines", code: "SQ" },
-  { name: "Malaysia Airlines Berhad", code: "MH" },
-  { name: "Gulf Air Company B.S.C", code: "GF" },
-  { name: "Cebu Air Inc", code: "5J" },
-  { name: "Oman Air", code: "WY" },
-  { name: "Turkish Airlines Inc", code: "TK" },
-  { name: "Philippine Airlines Inc", code: "PR" },
-  { name: "Saudi Arabian Airlines", code: "SV" },
-  { name: "British Airways", code: "BA" },
+  { name: "React", image: "/images/tech-icons/react-js-icon.svg" },
+  { name: "C++", image: "/images/tech-icons/c-plus.svg" },
+  { name: "C", image: "/images/tech-icons/c.svg" },
+  { name: "C#", image: "/images/tech-icons/c-sharp.svg" },
+
+  { name: "java", image: "/images/tech-icons/java.svg" },
+  { name: "mongo-db", image: "/images/tech-icons/mongo-db.svg" },
+  { name: "mysql", image: "/images/tech-icons/my-sql.svg" },
+  { name: "postman", image: "/images/tech-icons/postman.svg" },
+  { name: "next-js", image: "/images/tech-icons/next-js.svg" },
+  { name: "ex-js", image: "/images/tech-icons/express-js.svg" },
+  { name: "ps", image: "/images/tech-icons/photoshop.svg" },
+  { name: "illustrator", image: "/images/tech-icons/illustrator.svg" },
+  { name: "figma", image: "/images/tech-icons/figma.svg" },
+
+  { name: "Angular", image: "/images/tech-icons/angular-icon.svg" },
+  { name: "Node.js", image: "/images/tech-icons/node-js-icon.svg" },
+  { name: "Python", image: "/images/tech-icons/python-icon.svg" },
+  { name: "PHP", image: "/images/tech-icons/php-icon.svg" },
+  { name: "JavaScript", image: "/images/tech-icons/javascript-icon.svg" },
+  { name: "HTML5", image: "/images/tech-icons/html-icon.svg" },
+  { name: "CSS3", image: "/images/tech-icons/css-icon.svg" },
+  { name: "Tailwind CSS", image: "/images/tech-icons/tailwind-css-icon.svg" },
 ];
 const MyTechSection: React.FC = () => {
   return (
-    <div className="relative flex w-full items-center justify-center bg-radial from-[#340e4686] font-bilmond to-[#240a3073] py-4 my-4 backdrop-blur-sm ">
+    <div className="relative flex w-full items-center justify-center bg-radial from-[#340e4686] font-bilmond to-[#240a3073] py-8 my-4 backdrop-blur-sm ">
       <div className="flex w-full overflow-hidden px-4 py-2 lg:px-24">
         {" "}
         <Swiper
           modules={[Autoplay]}
+          slidesPerView="auto"
+          spaceBetween={60}
+          loop={true}
           freeMode={true}
+        
+          speed={4000}
           autoplay={{
             delay: 0,
-            disableOnInteraction: false,
+           
           }}
-          slidesPerView="auto"
-          spaceBetween={40}
-          speed={2500}
-          loop={true}
-          className="newSwiper flex h-full w-full flex-row gap-2 overflow-visible!"
+          className=" flex h-full w-full flex-row gap-8 overflow-visible!"
         >
           {tech.map((item, index) => (
             <SwiperSlide
@@ -49,11 +58,11 @@ const MyTechSection: React.FC = () => {
             >
               <div className="w-auto">
                 <Image
-                  src={``}
-                  alt="tech"
+                  src={item.image}
+                  alt={item.name}
                   height={25}
                   width={25}
-                  className="h-15 w-35 object-contain lg:h-20 lg:w-45"
+                  className="h-10 w-auto object-contain lg:h-16 lg:w-auto"
                 />
               </div>
             </SwiperSlide>
@@ -103,8 +112,6 @@ const MyTechSection: React.FC = () => {
           </div>
         </div>
       </div>
-
-  
     </div>
   );
 };

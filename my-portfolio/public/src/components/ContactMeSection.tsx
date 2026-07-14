@@ -51,7 +51,7 @@ const ContactMeSection: React.FC = () => {
             </div>
             <div className="flex flex-row items-center justify-center gap-8 flex-wrap">
               {[1, 2, 4, 5, 6].map((item, index) => (
-                <CallCTA key={item}/>
+                <CallCTA key={item} number="fds" />
               ))}
             </div>
             <div className="grid geid-cols-1 gap-4 items-center justify-center my-4">
@@ -82,23 +82,23 @@ const ContactMeSection: React.FC = () => {
 
 export default ContactMeSection;
 
-export function CallCTA() {
+const CallCTA: React.FC<{number: string}> = ({number}) => {
+const link = `tel:${number}`;
   return (
     <a
-      href={`tel:`}
+      href={link}
       className="group flex min-w-sm items-center gap-3 relative rounded-full bg-[#ffffff7e] backdrop-blur-sm p-2  shadow-lg transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
     >
-      {/* Left icon circle */}
+      
       <span className="absolute -left-2 flex h-15 w-15 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-[#6B3584]  to-[#290E79] shadow-md shadow-purple-950/40">
         <Phone className="h-4 w-4 text-white" strokeWidth={2} fill="white" />
       </span>
 
-      {/* Phone number */}
       <span className="flex-1 text-center text-base font-semibold tracking-wide text-white">
         text
       </span>
 
-      {/* Right arrow circle */}
+    
       <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white transition-colors duration-200 group-hover:bg-neutral-400/70">
         <ArrowUpRight className="h-4 w-4 text-[#22013d]" strokeWidth={2.5} />
       </span>

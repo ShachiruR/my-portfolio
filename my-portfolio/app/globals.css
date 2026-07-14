@@ -128,3 +128,7 @@ body {
 .fade-up {
   animation: fadeUp 0.8s ease-out forwards;
 }
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+}

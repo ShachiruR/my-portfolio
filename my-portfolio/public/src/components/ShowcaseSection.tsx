@@ -1,8 +1,8 @@
 "use client";
 
 import { ArrowUpRight, ShoppingCart } from "lucide-react";
-import Image from "next/image";
-
+import Image, { StaticImageData } from "next/image";
+import { projects } from "@/public/assets/myProjects";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 const tech = [
@@ -60,7 +60,7 @@ const ShowcaseSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex w-full absolute top-50 z-10 flex-row items-center justify-center gap-2  " >
+      <div className="flex w-full absolute top-50 z-10 flex-row items-center justify-center gap-2  ">
         {" "}
         <Swiper
           modules={[]}
@@ -68,12 +68,12 @@ const ShowcaseSection: React.FC = () => {
           spaceBetween={40}
           className=" flex h-full w-full flex-row gap-2"
         >
-          {tech.map((item, index) => (
+          {projects.map((project) => (
             <SwiperSlide
               className="w-auto! justify-center pb-4 "
-              key={index}
+              key={project.id}
             >
-              <ProjectCard />
+              <ProjectCard {...project} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -84,41 +84,68 @@ const ShowcaseSection: React.FC = () => {
 
 export default ShowcaseSection;
 
-export function ProjectCard() {
+interface Technology {
+  name: string;
+  icon: StaticImageData | string;
+}
+
+interface ProjectCardProps {
+  title: string;
+  status: string;
+  description: string;
+  image: StaticImageData | string;
+  tags: string[];
+  technologies: Technology[];
+  githubUrl: string;
+  projectUrl: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  title,
+  status,
+  description,
+  image,
+  tags,
+  technologies,
+  githubUrl,
+  projectUrl,
+}) => {
   return (
-    <div className="flex items-center justify-center relative flex-col">
-      <div className="-mb-10 z-10  ">
-        {" "}
+    <div className="relative flex flex-col items-center justify-center">
+      <div className="relative z-10 -mb-10">
+        <div className="absolute top-[10px] left-18 z-20 h-37 w-64 overflow-hidden">
+          <Image src={image} alt={title} fill className="object-cover" />
+        </div>
+
         <Image
           src="/images/laptop-screen.png"
-          alt=""
+          alt="Laptop"
           width={260}
           height={260}
-          className="h-auto w-[400px] drop-shadow-lg/25 max-w-none "
+          className="h-auto w-[400px] max-w-none drop-shadow-lg/25"
         />
       </div>
-      <div className="w-full max-w-sm ">
-        <div className="rounded-t-[60px] rounded-b-[30px] bg-linear-to-br from-[#f7f2f8] to-[#ece3f7] px-4 pt-16 pb-16 shadow-xl mx-2">
+
+      <div className="w-full max-w-sm">
+        <div className="mx-2 rounded-t-[60px] rounded-b-[30px] bg-linear-to-br from-[#f7f2f8] to-[#ece3f7] px-4 pt-16 pb-16 shadow-xl">
           <div className="mb-3 flex items-start justify-between gap-3">
-            <h2 className="text-2xl font-bold text-[#3a1f6b]">
-              Title of the Card
-            </h2>
+            <h2 className="text-2xl font-bold text-[#3a1f6b]">{title}</h2>
+
             <span className="mt-1 shrink-0 rounded-full border border-emerald-300 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
-              On Live
+              {status}
             </span>
           </div>
 
           <p className="mb-5 text-sm leading-relaxed text-slate-500">
-            A vibrant January festival honoring the Santo Niño, the Ati-Atihan
-            Festival fills the streets with rhythmic drumbeats, tribal costumes
+            {description}
           </p>
 
           <div className="mb-5 border-t border-[#e3d9ee]" />
 
           <div className="mb-6 flex flex-wrap gap-2">
-            {["E-commerce", "E-commerce", "E-commerce"].map((tag, i) => (
+            {tags.map((tag) => (
               <span
-                key={i}
+                key={tag}
                 className="flex items-center gap-1.5 rounded-full bg-[#efe6fb] px-3 py-1.5 text-xs font-medium text-[#6d3fb0]"
               >
                 <ShoppingCart className="h-3.5 w-3.5" strokeWidth={2} />
@@ -130,29 +157,47 @@ export function ProjectCard() {
           <p className="mb-2 text-xs font-medium text-[#b199d4]">
             Tools &amp; Technologies
           </p>
+
           <div className="flex gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-white shadow-sm">
-              {/* <FigmaIcon /> */}
-            </div>
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-white shadow-sm">
-              {/* <PinterestIcon /> */}
-            </div>
+            {technologies.map((tech) => (
+              <div
+                key={tech.name}
+                className="flex h-9 w-9 items-center justify-center rounded-xl bg-white shadow-sm"
+              >
+                <Image
+                  src={tech.icon}
+                  alt={tech.name}
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Buttons */}
-        <div className="flex gap-3 rounded-3xl bg-[#150420] p-2 absolute -bottom-6 text-nowrap left-1/2 -translate-x-1/2">
-          <button className="flex flex-1 items-center justify-center gap-2 px-4 rounded-full border border-white/15 bg-linear-to-br from-[#1f1f1f] to-[#0f0f0f] py-3 text-sm font-medium text-white transition hover:bg-[#201c24] shadow-lg/25 shadow-[#2b2b2b]">
-            {/* <Github className="h-4 w-4" /> */}
-            Open in Git Hub
+        <div className="absolute -bottom-6 left-1/2 flex -translate-x-1/2 gap-3 rounded-3xl bg-[#150420] p-2 text-nowrap">
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-1 items-center justify-center gap-2 rounded-full border border-white/15 bg-linear-to-br from-[#1f1f1f] to-[#0f0f0f] px-4 py-3 text-sm font-medium text-white shadow-lg/25 shadow-[#2b2b2b] transition hover:bg-[#201c24]"
+          >
+            Open in GitHub
             <ArrowUpRight className="h-4 w-4" />
-          </button>
-          <button className="flex flex-1 items-center justify-center gap-2 rounded-full bg-linear-to-r from-[#3d2a63] to-[#8b3fb8] px-4 py-3 text-sm font-medium text-white shadow-lg transition hover:brightness-110">
+          </a>
+
+          <a
+            href={projectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-1 items-center justify-center gap-2 rounded-full bg-linear-to-r from-[#3d2a63] to-[#8b3fb8] px-4 py-3 text-sm font-medium text-white shadow-lg transition hover:brightness-110"
+          >
             View Project
             <ArrowUpRight className="h-4 w-4" />
-          </button>
+          </a>
         </div>
       </div>
     </div>
   );
-}
+};
