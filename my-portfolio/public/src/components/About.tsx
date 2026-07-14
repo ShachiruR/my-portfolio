@@ -39,7 +39,7 @@ const skills = [
 
 export function AboutSkillsSection() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-10 px-6 py-12 text-white">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-10 md:px-6 py-12 text-white">
       {/* Who am I */}
       <div className="flex flex-col gap-6">
         <h2 className="text-3xl font-bold">
@@ -110,7 +110,7 @@ export function AboutSkillsSection() {
 
       {/* Skills List */}
       <div className="flex flex-col gap-6 md:pl-10 relative">
-        <span className="w-px h-full absolute left-0 top-0 bg-linear-to-b from-white to-transparent " />
+        <span className="w-px h-full absolute left-0 top-0 bg-linear-to-b from-white to-transparent md:flex hidden " />
         <h2 className="text-3xl font-bold">
           Skills <span className="text-purple-400">List</span>
         </h2>

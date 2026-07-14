@@ -18,7 +18,6 @@ import TopBar from "./hero-components/TopBar";
 import { useEffect } from "react";
 
 export default function Hero() {
- 
   return (
     <section className="relative overflow-hidden rounded-[32px] bg-linear-to-r from-[#EAD6FD] via-[#f8f3fc] to-[#EAD6FD] m-3 md:m-4 h-fit py-18 font-bilmond">
       {/* Background */}
@@ -195,7 +194,7 @@ export default function Hero() {
         INNOVATE • OPTIMIZE • INSPIRE
       </span>
 
-      <div className="flex flex-col justify-between gap-5 lg:mt-10 lg:flex-row lg:items-end absolute bottom-24 left-32 z-10">
+      <div className="hidden md:flex flex-col justify-between gap-5 lg:mt-10 lg:flex-row lg:items-end absolute bottom-24 left-32 z-10">
         {/* about card */}
         <div className="w-full max-w-[250px] rounded-3xl bg-white/60 p-5 shadow-sm ring-2 ring-white backdrop-blur  shadow-purple-300/50">
           <div className="mb-2 flex items-center gap-2 text-xs font-bold tracking-wider text-[#7d4eaa]">
@@ -216,7 +215,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="grid z-10 w-full max-w-[300px] rounded-3xl bg-white/60  shadow-sm ring-2 ring-white backdrop-blur grid-cols-2  absolute bottom-24 right-32 overflow-hidden">
+      <div className=" hidden md:grid z-10 w-full max-w-[300px] rounded-3xl bg-white/60  shadow-sm ring-2 ring-white backdrop-blur grid-cols-2  absolute bottom-24 right-32 overflow-hidden">
         <StatCard
           icon={<Sparkles className="h-4 w-4 text-purple-600" />}
           value="30+"

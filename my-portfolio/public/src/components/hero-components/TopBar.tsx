@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TopBar = () => {
   return (
-    <div className="absolute top-0 left-1/2 flex -translate-x-1/2 items-end  z-10">
+    <div className="absolute top-0 left-1/2 hidden md:flex -translate-x-1/2 items-end  z-10">
       <Image
         src="/images/curvedLeftTop.svg"
         alt=""

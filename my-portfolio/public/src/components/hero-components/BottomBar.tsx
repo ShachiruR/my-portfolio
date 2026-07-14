@@ -5,7 +5,7 @@ import { TechIcons } from "@/public/assets/techIcons";
 import Link from "next/link";
 const Bottombar = () => {
   return (
-    <div className="absolute bottom-0 left-1/2 flex -translate-x-1/2 items-end w-[calc(100%-12rem)] z-10">
+    <div className="absolute bottom-0 left-1/2 hidden md:flex -translate-x-1/2 items-end w-[calc(100%-12rem)] z-10">
       <Image
         src="/images/curvedLeft.svg"
         alt=""
