@@ -28,14 +28,14 @@ export default function Hero() {
 
         {/*  circles */}
 
-        <div className="absolute h-[150px] w-[150px] rounded-full     bg-[radial-gradient(circle,#E5CEF6_40%,transparent_65%)] mt-36 " />
-        <div className="absolute h-[220px] w-[220px] rounded-full border border-[#ecd9faab] mt-36 " />
+        <div className="absolute h-[150px] w-[150px] rounded-full     bg-[radial-gradient(circle,#E5CEF6_40%,transparent_65%)] mt-36  spin-loop" />
+        <div className="absolute h-[220px] w-[220px] rounded-full border border-[#ecd9faab] mt-36  spin-loop" />
 
-        <div className="absolute h-[300px] w-[300px] rounded-full border-2 border-dashed border-[#ecd9faab] mt-36" />
+        <div className="absolute h-[300px] w-[300px] rounded-full border-2 border-dashed border-[#ecd9faab] mt-36 spin-loop" />
 
-        <div className="absolute h-[400px] w-[400px] rounded-full border border-[#ecd9faab] mt-36  " />
+        <div className="absolute h-[400px] w-[400px] rounded-full border border-[#ecd9faab] mt-36  spin-loop" />
 
-        <div className="absolute h-[520px] w-[520px] rounded-full border-2 border-dashed border-[#ecd9faab] mt-36 " />
+        <div className="absolute h-[520px] w-[520px] rounded-full border-2 border-dashed border-[#ecd9faab] mt-36 spin-loop" />
 
         <div className="z-20 flex items-center flex-col gap-4 md:gap-0">
           <h3
@@ -97,7 +97,7 @@ export default function Hero() {
             className="
                 h-auto
                 w-[220px]
-             
+             flash-in
                 lg:w-[260px]
               "
           />
@@ -141,7 +141,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute  z-10 left-32 top-42 hidden xl:block">
+      <div className="absolute  z-10 left-32 top-42 hidden xl:block  flash-in">
         <Image
           src="/images/painter.png"
           alt=""
@@ -163,19 +163,19 @@ export default function Hero() {
               Crafting
             </strong>{" "}
             <br />
-            <span >
+            <span>
               Pixel Perfect <br /> Designs
             </span>
           </span>
         </div>
       </div>
-      <div className="absolute  z-10 right-32 top-36 hidden xl:block">
+      <div className="absolute  z-10 right-32 top-36 hidden xl:block  flash-in">
         <Image
           src="/images/tech-arm.png"
           alt=""
           width={390}
           height={390}
-          className="drop-shadow-2xl h-auto w-[300px]"
+          className="drop-shadow-2xl h-auto w-[300px]  "
         />
         <div className="absolute -bottom-4  right-2 text-[#29033f] font-dancingScript">
           <Image

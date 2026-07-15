@@ -164,3 +164,63 @@ body {
     border-color: transparent;
   }
 }
+
+.scale-in {
+  transform: scale(0);
+  animation: scaleIn 1.2s ease-out forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.flash-in {
+  animation: flashIn 2s ease-out 6s infinite;
+}
+
+@keyframes flashIn {
+  
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+    filter: blur(10px);
+  }
+
+  
+  28% {
+    opacity: 1;
+    transform: scale(1.08);
+    filter: blur(0);
+  }
+
+  32% {
+    transform: scale(1);
+  }
+
+  
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+
+.spin-loop {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
