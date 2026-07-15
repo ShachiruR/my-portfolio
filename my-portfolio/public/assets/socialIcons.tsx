@@ -20,7 +20,7 @@ export const SocialIcons = [
   {
     icon: WhatsappIcon,
     name: "WhatsApp",
-    link: "",
+    link: "https://wa.me/94770453010?text=Hello%20Shachiru,%20I'd%20like%20to%20discuss%20a%20project.",
   },
   {
     icon: YoutubeIcon,
@@ -30,7 +30,7 @@ export const SocialIcons = [
   {
     icon: PinterestIcon,
     name: "Pinterest",
-    link: "",
+    link: "https://www.pinterest.com/sachierush/",
   },
   {
     icon: XIcon,
@@ -40,6 +40,6 @@ export const SocialIcons = [
   {
     icon: LinkedInIcon,
     name: "LinkedIn",
-    link: "",
+    link: "https://www.linkedin.com/in/shachirur",
   },
 ];

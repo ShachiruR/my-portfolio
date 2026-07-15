@@ -4,7 +4,9 @@ import NextjsIcon from "../images/tech-icons/node-js-icon.svg";
 import PHPIcon from "../images/tech-icons/php-icon.svg";
 import ReactJSIcon from "../images/tech-icons/react-js-icon.svg";
 import TailwindCSSIcon from "../images/tech-icons/tailwind-css-icon.svg";
-import AngulerIcon from "../images/tech-icons/angular-icon.svg";
+import CIcon from "../images/tech-icons/c.svg";
+import Python from "../images/tech-icons/python-icon.svg";
+
 
 export const TechIcons = [
   {
@@ -18,20 +20,22 @@ export const TechIcons = [
     link: "",
   },
   {
-    icon: AngulerIcon,
-    name: "Anguler",
+    icon: CIcon,
+    name: "C",
     link: "",
   },
+  {
+    icon: Python,
+    name: "Python",
+    link: "",
+  },
+
   {
     icon: NextjsIcon,
     name: "Nextjs",
     link: "",
   },
-  {
-    icon: PHPIcon,
-    name: "Php",
-    link: "",
-  },
+ 
   {
     icon: ReactJSIcon,
     name: "Reactjs",

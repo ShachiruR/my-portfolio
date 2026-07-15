@@ -19,13 +19,11 @@ import { useEffect } from "react";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden md:rounded-[32px] bg-linear-to-r from-[#EAD6FD] via-[#f8f3fc] to-[#EAD6FD]  md:m-4 h-fit py-18 font-bilmond px-6 md:px-0">
+    <section className="relative overflow-hidden rounded-b-[32px] md:rounded-[32px] bg-linear-to-r from-[#EAD6FD] via-[#f8f3fc] to-[#EAD6FD]  md:m-4 h-fit py-8 md:py-18 font-bilmond px-6 md:px-0">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden"></div>
 
-   
-
-      <div className="relative flex flex-col items-center  justify-center mt-3 ">
+      <div className="relative flex flex-col items-center  justify-center mt-3 gap-4 md:gap-0">
         {/* Heading */}
 
         {/*  circles */}
@@ -39,7 +37,7 @@ export default function Hero() {
 
         <div className="absolute h-[520px] w-[520px] rounded-full border-2 border-dashed border-[#ecd9faab] mt-36 " />
 
-        <div className="z-20 flex items-center flex-col ">
+        <div className="z-20 flex items-center flex-col gap-4 md:gap-0">
           <h3
             className="
     text-[28px] font-bold uppercase tracking-wider
@@ -64,7 +62,7 @@ export default function Hero() {
             SHACHIRU
           </h1>
 
-          <div className="font-bilmond text-[#2d004b] font-semibold text-center">
+          <div className="font-bilmond text-[#2d004b] font-semibold text-center typewriter">
             I Build digital experiences that are fast, interactive & impactful
           </div>
           <div
@@ -110,18 +108,29 @@ export default function Hero() {
         </div>
 
         <div className="mt-4 flex flex-wrap items-center justify-center gap-3 sm:gap-4 relative z-10 font-bilmond">
-          <button className=" cursor-pointer flex items-center justify-center gap-2 rounded-xl bg-linear-to-r to-[#6f29ca] from-[#b941f0] px-6 py-2 text-sm ring ring-[#b941f0] font-semibold text-white shadow-lg shadow-purple-300/50 transition hover:brightness-110">
+          <button
+            onClick={() =>
+              document.getElementById("showcase")?.scrollIntoView({
+                behavior: "smooth",
+              })
+            }
+            className=" cursor-pointer flex items-center justify-center gap-2 rounded-xl bg-linear-to-r to-[#6f29ca] from-[#b941f0] px-6 py-2 text-sm ring ring-[#b941f0] font-semibold text-white shadow-lg shadow-purple-300/50 transition hover:brightness-110"
+          >
             View My Work{" "}
             <div className="rounded-full h-6 w-6 bg-pink-200/20 flex items-center justify-center">
               <ArrowUpRight size={12} />
             </div>
           </button>
-          <button className="flex items-center gap-2 rounded-xl bg-white px-6 py-2 text-sm font-semibold text-gray-800 shadow ring-1 ring-purple-100 transition hover:bg-purple-50">
+          <a
+            href="/cv/Shachiru_Rashmika_CV.pdf"
+            download="Shachiru_Rashmika_CV.pdf"
+            className="flex items-center gap-2 rounded-xl bg-white px-6 py-2 text-sm font-semibold text-gray-800 shadow ring-1 ring-purple-100 transition hover:bg-purple-50"
+          >
             Download CV{" "}
-            <div className="rounded-full h-6 w-6 bg-pink-400/20 flex items-center justify-center">
+            <div className="rounded-full h-6 w-6 bg-pink-200/20 flex items-center justify-center">
               <Download size={16} />
             </div>
-          </button>
+          </a>
         </div>
 
         <div className="mt-6 flex flex-col items-center gap-1.5 text-[11px] font-semibold tracking-widest text-[#a76abe]  relative z-10">
@@ -141,7 +150,7 @@ export default function Hero() {
           className="drop-shadow-2xl h-auto w-[260px]  animation-spin"
         />
 
-        <div className="absolute -bottom-2 text-[#29033f] font-dancingScript">
+        <div className="absolute -bottom-2 text-[#29033f] font-dancingScript ">
           <Image
             src="/images/arrow-left.svg"
             alt=""
@@ -149,11 +158,14 @@ export default function Hero() {
             height={390}
             className=" h-auto w-[40px]"
           />
-          <span className="text-left text-[18px] leading-none">
-            <strong className="text-[#710b91] font-bold text-[20px]">
+          <span className="text-left text-[18px] leading-none ">
+            <strong className="text-[#710b91] font-bold text-[20px] ">
               Crafting
             </strong>{" "}
-            <br /> Pixel Perfect <br /> Designs
+            <br />
+            <span >
+              Pixel Perfect <br /> Designs
+            </span>
           </span>
         </div>
       </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { SocialIcons } from "@/public/assets/socialIcons";
 import { TechIcons } from "@/public/assets/techIcons";
 import Link from "next/link";
+import { MoreHoriz } from "@mui/icons-material";
 const Bottombar = () => {
   return (
     <div className="absolute bottom-0 left-1/2 hidden md:flex -translate-x-1/2 items-end w-[calc(100%-12rem)] z-10">
@@ -24,6 +25,8 @@ const Bottombar = () => {
               <Link
                 key={index}
                 href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-8 w-8 items-center justify-center rounded-full bg-radial from-[#160236] to-[#3a1a6e] p-2 ring ring-[#8c4eddd3] hover:scale-105 transition-all  ease-in-out cursor-pointer"
               >
                 <Image
@@ -48,6 +51,8 @@ const Bottombar = () => {
               <Link
                 key={index}
                 href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-8 w-8 relative items-center justify-center rounded-full overflow-visible bg-radial from-[#160236] to-[#3a1a6e] p-2 ring ring-[#8c4eddd3] hover:scale-105 transition-all  ease-in-out cursor-pointer"
               >
                 <Image
@@ -59,6 +64,16 @@ const Bottombar = () => {
                 />
               </Link>
             ))}
+            <button
+              onClick={() =>
+                document.getElementById("techStack")?.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+              className="flex h-8 w-8 relative items-center justify-center rounded-full overflow-visible bg-radial from-[#160236] to-[#3a1a6e] p-2 ring ring-[#8c4eddd3] hover:scale-105 transition-all  ease-in-out cursor-pointer"
+            >
+              <MoreHoriz />
+            </button>
           </div>
         </div>
       </div>

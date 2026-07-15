@@ -5,26 +5,13 @@ import Image, { StaticImageData } from "next/image";
 import { projects } from "@/public/assets/myProjects";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-const tech = [
-  { name: "Qatar Airways", code: "QR" },
-  { name: "Cathay Pacific Airways", code: "CX" },
-  { name: "Emirates", code: "EK" },
-  { name: "Kuwait Airways", code: "KU" },
-  { name: "Etihad Airways", code: "EY" },
-  { name: "Air China Limited", code: "CA" },
-  { name: "Singapore Airlines", code: "SQ" },
-  { name: "Malaysia Airlines Berhad", code: "MH" },
-  { name: "Gulf Air Company B.S.C", code: "GF" },
-  { name: "Cebu Air Inc", code: "5J" },
-  { name: "Oman Air", code: "WY" },
-  { name: "Turkish Airlines Inc", code: "TK" },
-  { name: "Philippine Airlines Inc", code: "PR" },
-  { name: "Saudi Arabian Airlines", code: "SV" },
-  { name: "British Airways", code: "BA" },
-];
+
 const ShowcaseSection: React.FC = () => {
   return (
-    <div className="w-full h-screen relative py-12 font-bilmond">
+    <div
+      className="w-full md:h-screen relative py-12 font-bilmond"
+      id="showcase"
+    >
       <div className="container">
         <div
           className="flex    h-100  rounded-t-4xl border bodrer-white w-full p-0 relative "

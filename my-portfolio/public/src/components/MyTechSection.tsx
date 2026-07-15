@@ -34,7 +34,10 @@ const tech = [
 ];
 const MyTechSection: React.FC = () => {
   return (
-    <div className="relative flex w-full items-center justify-center bg-radial from-[#340e4686] font-bilmond to-[#240a3073] py-8 my-4 backdrop-blur-sm  ">
+    <div
+      className="relative flex w-full items-center justify-center bg-radial from-[#340e4686] font-bilmond to-[#240a3073] py-8 my-4 backdrop-blur-sm  "
+      id="techStack"
+    >
       <div className="flex w-full overflow-hidden px-4 py-2 lg:px-24">
         {" "}
         <Swiper

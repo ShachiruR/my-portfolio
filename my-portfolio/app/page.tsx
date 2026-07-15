@@ -8,8 +8,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full relative overflow-hidden">
-      <TopBar />
+    <div className="w-full relative overflow-hidden grid grid-cols-1 items-center justify-center">
+      <div className="sticky top-0 z-50">
+        <TopBar />
+      </div>
       <Hero />
       <About />
       <MyTechSection />

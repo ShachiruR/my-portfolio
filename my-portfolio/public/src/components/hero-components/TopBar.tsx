@@ -8,22 +8,22 @@ import { useState } from "react";
 const navItems = [
   {
     title: "About",
-    href: "#about",
+    href: "about",
     icon: User,
   },
   {
     title: "Showcase",
-    href: "#showcase",
+    href: "showcase",
     icon: Briefcase,
   },
   {
     title: "Playground",
-    href: "#playground",
+    href: "playground",
     icon: Sparkles,
   },
   {
     title: "Contact",
-    href: "#contact",
+    href: "contact",
     icon: Mail,
   },
 ];
@@ -34,7 +34,7 @@ export default function TopBar() {
   return (
     <>
       {/* ================= Desktop ================= */}
-      <div className="absolute top-0 left-1/2 z-50 hidden -translate-x-1/2 items-end md:flex overflow-visible mt-3 md:mt-4">
+      <div className="absolute top-0 left-1/2 z-50 hidden -translate-x-1/2 items-end md:flex overflow-visible mt-3 md:mt-4 ">
         <Image
           src="/images/curvedLeftTop.svg"
           alt=""
@@ -44,17 +44,21 @@ export default function TopBar() {
         />
 
         <div className="relative flex h-[60px] items-center justify-center bg-[#150420] overflow-visible">
-          <div className="absolute bottom-px h-[2px] w-full bg-gradient-to-r from-transparent via-violet-400 to-transparent" />
+          <div className="absolute bottom-px h-[2px] w-full bg-linear-to-r from-transparent via-violet-400 to-transparent" />
 
           <div className="relative mb-3 flex gap-2 px-4 py-6">
             {navItems.map((item) => {
               const Icon = item.icon;
 
               return (
-                <Link
+                <button
                   key={item.title}
-                  href={item.href}
                   className="group relative flex items-center gap-2 rounded-full px-4 py-2 transition-all duration-300 hover:-translate-y-0.5"
+                  onClick={() =>
+                    document.getElementById(item.href)?.scrollIntoView({
+                      behavior: "smooth",
+                    })
+                  }
                 >
                   <div className="absolute inset-0 rounded-full bg-violet-500/0 transition-all duration-300 group-hover:bg-violet-500/15 group-hover:shadow-[0_0_25px_rgba(168,85,247,0.5)]" />
 
@@ -67,8 +71,8 @@ export default function TopBar() {
                     {item.title}
                   </span>
 
-                  <span className="absolute bottom-0 left-1/2 h-[2px] w-0 -translate-x-1/2 rounded-full bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 transition-all duration-300 group-hover:w-3/4" />
-                </Link>
+                  <span className="absolute bottom-0 left-1/2 h-[2px] w-0 -translate-x-1/2 rounded-full bg-linear-to-r from-violet-400 via-fuchsia-400 to-cyan-400 transition-all duration-300 group-hover:w-3/4" />
+                </button>
               );
             })}
           </div>
@@ -99,7 +103,7 @@ export default function TopBar() {
 
         {/* Floating Menu */}
         <div
-          className={`absolute right-0 mt-4 flex flex-col gap-3 transition-all duration-300 ${
+          className={`absolute right-0 mt-4 flex flex-col gap-3 transition-all duration-300  ${
             open
               ? "translate-y-0 opacity-100"
               : "pointer-events-none -translate-y-5 opacity-0"
@@ -109,10 +113,14 @@ export default function TopBar() {
             const Icon = item.icon;
 
             return (
-              <Link
+              <button
                 key={item.title}
-                href={item.href}
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  setOpen(false);
+                  document.getElementById(item.href)?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
                 className="group flex items-center gap-3 rounded-full border border-violet-500/20 bg-[#150420]/90 px-4 py-3 backdrop-blur-xl shadow-[0_0_25px_rgba(139,92,246,.25)] transition-all hover:translate-x-1 hover:border-violet-400 hover:shadow-[0_0_35px_rgba(139,92,246,.5)]"
               >
                 <Icon
@@ -123,7 +131,7 @@ export default function TopBar() {
                 <span className="whitespace-nowrap text-sm font-medium text-white">
                   {item.title}
                 </span>
-              </Link>
+              </button>
             );
           })}
         </div>

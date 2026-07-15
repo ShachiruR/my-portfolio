@@ -9,7 +9,10 @@ import Link from "next/link";
 import { SocialIcons } from "@/public/assets/socialIcons";
 const ContactMeSection: React.FC = () => {
   return (
-    <div className="w-full  relative flex items-center justify-center py-12 font-bilmond container lg:my-32 overflow-hidden">
+    <div
+      className="w-full  relative flex items-center justify-center py-12 font-bilmond container  overflow-hidden my-80 md:my-32  "
+      id="contact"
+    >
       <div className="w-full h-full absolute top-0">
         <Image
           src={`/images/contact-mesh.svg`}
@@ -79,12 +82,12 @@ const ContactMeSection: React.FC = () => {
 
               <CallCTA
                 href="https://shachiruR.github"
-                text="@shachiru"
+                text="shachiruR"
                 logo={<GitHubIcon className="h-4 w-4 text-white" />}
               />
 
               <CallCTA
-                href="https://shachiruR.linkedIn"
+                href="https://www.linkedin.com/in/shachirur"
                 text="@shachirurashmika"
                 logo={<LinkedInIcon className="h-4 w-4 text-white" />}
               />
@@ -98,7 +101,9 @@ const ContactMeSection: React.FC = () => {
                   <Link
                     key={index}
                     href={item.link}
-                    className="  flex h-12 w-12 shrink-0  ring-1 ring-[#44155f18] shadow-md/25 items-center justify-center rounded-full bg-linear-to-b from-[#9B42C4]  to-[#7A1EDD] shadow-md "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="  flex h-12 w-12 shrink-0  ring-1 ring-[#44155f18] shadow-md/25 items-center justify-center rounded-full bg-linear-to-b from-[#9B42C4]  to-[#7A1EDD] shadow-md hover:scale-105 transition-transform duration-200"
                   >
                     <Image
                       src={item.icon}
@@ -130,6 +135,8 @@ const CallCTA: React.FC<CallCTAProps> = ({ logo, href, text }) => {
   return (
     <a
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className="group flex min-w-sm items-center gap-3 relative rounded-full bg-[#ffffff7e] backdrop-blur-sm p-2 shadow-lg transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
     >
       <span className="absolute -left-2 flex h-15 w-15 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-[#6B3584] to-[#290E79] shadow-md shadow-purple-950/40">
