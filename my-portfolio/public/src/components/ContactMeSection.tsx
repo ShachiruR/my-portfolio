@@ -81,7 +81,7 @@ const ContactMeSection: React.FC = () => {
               />
 
               <CallCTA
-                href="https://shachiruR.github"
+                href="https://github.com/ShachiruR"
                 text="shachiruR"
                 logo={<GitHubIcon className="h-4 w-4 text-white" />}
               />
