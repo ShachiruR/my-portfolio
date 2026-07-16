@@ -1,25 +1,24 @@
 export const projects = [
   {
     id: 1,
-    title: "Travel Booking Platform",
+    title: "Diamond LK",
     status: "On Live",
     description:
-      "A complete travel booking system with flight search, hotel reservations, package management, and payment integration.",
-    image:
-      "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80",
-    tags: ["Travel", "Booking", "SaaS"],
+      "An online jewelry e-commerce platform featuring secure Stripe payments, product browsing, and order management.",
+    image: "/images/projects/diamondsLK.png",
+    tags: ["Online Jewelry Store", "Ecommerce", "Payment"],
     technologies: [
       {
-        name: "Next.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        name: "React",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       },
       {
-        name: "TypeScript",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        name: "Node.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       },
       {
-        name: "Tailwind CSS",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+        name: "MongoDB",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       },
     ],
     githubUrl: "https://github.com/demo/travel",
@@ -28,12 +27,11 @@ export const projects = [
 
   {
     id: 2,
-    title: "E-Commerce Marketplace",
+    title: "Translator Pro",
     status: "Completed",
     description:
-      "Full-stack ecommerce platform with product management, shopping cart, authentication, and online payments.",
-    image:
-      "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1200&q=80",
+      "A Sinhala–English translation web application powered by the Google Translate API for fast and accurate language translation.",
+    image: "/images/projects/proTranslator.png",
     tags: ["E-Commerce", "Payment", "Dashboard"],
     technologies: [
       {
@@ -55,25 +53,24 @@ export const projects = [
 
   {
     id: 3,
-    title: "AI Chat Assistant",
-    status: "Beta",
+    title: "HealthApp",
+    status: "Completed",
     description:
-      "An AI-powered chatbot application with conversational memory and smart responses.",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80",
+      "An online healthcare platform that enables users to book doctor appointments, manage schedules, and access healthcare services.",
+    image: "/images/projects/HealthApp.png",
     tags: ["AI", "Chatbot", "Machine Learning"],
     technologies: [
-      {
-        name: "Python",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-      },
       {
         name: "React",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       },
       {
-        name: "FastAPI",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+        name: "Node.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      },
+      {
+        name: "MongoDB",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       },
     ],
     githubUrl: "https://github.com/demo/ai-chat",
@@ -86,8 +83,7 @@ export const projects = [
     status: "Research",
     description:
       "GIS-based land valuation system using machine learning models, spatial analysis, and automated property estimation.",
-    image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
+    image: "/images/projects/valuerBot.png",
     tags: ["GIS", "ML", "Real Estate"],
     technologies: [
       {
