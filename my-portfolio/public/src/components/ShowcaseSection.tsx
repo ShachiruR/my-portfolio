@@ -28,7 +28,7 @@ const ShowcaseSection: React.FC = () => {
             }}
           >
             <Image
-              src={`/images/showcaseback.png`}
+              src={`/images/showCaseBack.png`}
               alt="tech"
               fill
               className=" object-cover "
