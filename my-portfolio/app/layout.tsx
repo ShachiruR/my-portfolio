@@ -16,22 +16,22 @@ const geistMono = Geist_Mono({
 const dancingScript = localFont({
   src: [
     {
-      path: "../fonts/dancingScript-regular.ttf",
+      path: "../Fonts/dancingScript-regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../fonts/dancingScript-bold.ttf",
+      path: "../Fonts/dancingScript-bold.ttf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../fonts/dancingScript-semiBold.ttf",
+      path: "../Fonts/dancingScript-semiBold.ttf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../fonts/dancingScript-medium.ttf",
+      path: "../Fonts/dancingScript-medium.ttf",
       weight: "500",
       style: "normal",
     },
@@ -42,47 +42,47 @@ const dancingScript = localFont({
 const bilmond = localFont({
   src: [
     {
-      path: "../fonts/bilmond-thin.ttf",
+      path: "../Fonts/bilmond-thin.ttf",
       weight: "100",
       style: "normal",
     },
     {
-      path: "../fonts/bilmond-extralight.ttf",
+      path: "../Fonts/bilmond-extralight.ttf",
       weight: "200",
       style: "normal",
     },
     {
-      path: "../fonts/bilmond-light.ttf",
+      path: "../Fonts/bilmond-light.ttf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../fonts/bilmond-regular.ttf",
+      path: "../Fonts/bilmond-regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../fonts/bilmond-medium.ttf",
+      path: "../Fonts/bilmond-medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../fonts/bilmond-semibold.ttf",
+      path: "../Fonts/bilmond-semibold.ttf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../fonts/bilmond-bold.ttf",
+      path: "../Fonts/bilmond-bold.ttf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../fonts/bilmond-black.ttf",
+      path: "../Fonts/bilmond-black.ttf",
       weight: "800",
       style: "normal",
     },
     {
-      path: "../fonts/bilmond-extraBlack.ttf",
+      path: "../Fonts/bilmond-extraBlack.ttf",
       weight: "900",
       style: "normal",
     },
