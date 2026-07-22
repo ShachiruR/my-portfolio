@@ -82,7 +82,7 @@ const bilmond = localFont({
       style: "normal",
     },
     {
-      path: "../Fonts/bilmond-extraBlack.ttf",
+      path: "../Fonts/bilmond-extrablack.ttf",
       weight: "900",
       style: "normal",
     },
