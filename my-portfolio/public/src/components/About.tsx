@@ -72,7 +72,8 @@ export function AboutSkillsSection() {
             <div>
               <p className="text-xs text-gray-400">Education</p>
               <p className="text-sm font-semibold text-white">
-                BSc Hons SE Degree
+                BSc (Hons) in Information Technology,Specializing Software
+                Engineering
               </p>
             </div>
           </div>
@@ -95,7 +96,7 @@ export function AboutSkillsSection() {
             </span>
             <div>
               <p className="text-xs text-gray-400">Telephone</p>
-              <p className="text-sm font-semibold text-white">01431242154</p>
+              <p className="text-sm font-semibold text-white">0770453010</p>
             </div>
           </div>
 
