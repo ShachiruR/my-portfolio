@@ -126,126 +126,126 @@ export const projects = [
     projectUrl: "https://expense-demo.com",
   },
 
-  {
-    id: 6,
-    title: "Food Delivery Platform",
-    status: "On Live",
-    description:
-      "Online food ordering platform with restaurant management, delivery tracking, and user reviews.",
-    image:
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&q=80",
-    tags: ["Food", "Delivery", "Marketplace"],
-    technologies: [
-      {
-        name: "React",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      },
-      {
-        name: "Express",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-      },
-      {
-        name: "MongoDB",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-      },
-    ],
-    githubUrl: "https://github.com/demo/food",
-    projectUrl: "https://food-demo.com",
-  },
+  // {
+  //   id: 6,
+  //   title: "Food Delivery Platform",
+  //   status: "On Live",
+  //   description:
+  //     "Online food ordering platform with restaurant management, delivery tracking, and user reviews.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&q=80",
+  //   tags: ["Food", "Delivery", "Marketplace"],
+  //   technologies: [
+  //     {
+  //       name: "React",
+  //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  //     },
+  //     {
+  //       name: "Express",
+  //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  //     },
+  //     {
+  //       name: "MongoDB",
+  //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  //     },
+  //   ],
+  //   githubUrl: "https://github.com/demo/food",
+  //   projectUrl: "https://food-demo.com",
+  // },
 
-  {
-    id: 7,
-    title: "Fitness Tracking App",
-    status: "Completed",
-    description:
-      "Fitness application to track workouts, calories, goals, and progress statistics.",
-    image:
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&q=80",
-    tags: ["Health", "Mobile", "Tracking"],
-    technologies: [
-      {
-        name: "Flutter",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
-      },
-      {
-        name: "Dart",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
-      },
-    ],
-    githubUrl: "https://github.com/demo/fitness",
-    projectUrl: "https://fitness-demo.com",
-  },
+  // {
+  //   id: 7,
+  //   title: "Fitness Tracking App",
+  //   status: "Completed",
+  //   description:
+  //     "Fitness application to track workouts, calories, goals, and progress statistics.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&q=80",
+  //   tags: ["Health", "Mobile", "Tracking"],
+  //   technologies: [
+  //     {
+  //       name: "Flutter",
+  //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+  //     },
+  //     {
+  //       name: "Dart",
+  //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
+  //     },
+  //   ],
+  //   githubUrl: "https://github.com/demo/fitness",
+  //   projectUrl: "https://fitness-demo.com",
+  // },
 
-  {
-    id: 8,
-    title: "Learning Management System",
-    status: "On Development",
-    description:
-      "Online education platform with courses, video lessons, quizzes, and student progress tracking.",
-    image:
-      "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=1200&q=80",
-    tags: ["Education", "LMS", "Web"],
-    technologies: [
-      {
-        name: "Next.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-      },
-      {
-        name: "PostgreSQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-      },
-    ],
-    githubUrl: "https://github.com/demo/lms",
-    projectUrl: "https://lms-demo.com",
-  },
+  // {
+  //   id: 8,
+  //   title: "Learning Management System",
+  //   status: "On Development",
+  //   description:
+  //     "Online education platform with courses, video lessons, quizzes, and student progress tracking.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=1200&q=80",
+  //   tags: ["Education", "LMS", "Web"],
+  //   technologies: [
+  //     {
+  //       name: "Next.js",
+  //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  //     },
+  //     {
+  //       name: "PostgreSQL",
+  //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  //     },
+  //   ],
+  //   githubUrl: "https://github.com/demo/lms",
+  //   projectUrl: "https://lms-demo.com",
+  // },
 
-  {
-    id: 9,
-    title: "Social Media Dashboard",
-    status: "Completed",
-    description:
-      "Analytics dashboard for monitoring social media engagement and audience growth.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
-    tags: ["Analytics", "Dashboard", "Charts"],
-    technologies: [
-      {
-        name: "React",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      },
-      {
-        name: "Chart.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-      },
-    ],
-    githubUrl: "https://github.com/demo/dashboard",
-    projectUrl: "https://dashboard-demo.com",
-  },
+  // {
+  //   id: 9,
+  //   title: "Social Media Dashboard",
+  //   status: "Completed",
+  //   description:
+  //     "Analytics dashboard for monitoring social media engagement and audience growth.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
+  //   tags: ["Analytics", "Dashboard", "Charts"],
+  //   technologies: [
+  //     {
+  //       name: "React",
+  //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  //     },
+  //     {
+  //       name: "Chart.js",
+  //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  //     },
+  //   ],
+  //   githubUrl: "https://github.com/demo/dashboard",
+  //   projectUrl: "https://dashboard-demo.com",
+  // },
 
-  {
-    id: 10,
-    title: "Portfolio Website",
-    status: "On Live",
-    description:
-      "Creative developer portfolio with animations, interactive sections, and modern UI design.",
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80",
-    tags: ["Portfolio", "UI/UX", "Animation"],
-    technologies: [
-      {
-        name: "Next.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-      },
-      {
-        name: "Framer Motion",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      },
-      {
-        name: "Tailwind",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-      },
-    ],
-    githubUrl: "https://github.com/demo/portfolio",
-    projectUrl: "https://portfolio-demo.vercel.app",
-  },
+  // {
+  //   id: 10,
+  //   title: "Portfolio Website",
+  //   status: "On Live",
+  //   description:
+  //     "Creative developer portfolio with animations, interactive sections, and modern UI design.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80",
+  //   tags: ["Portfolio", "UI/UX", "Animation"],
+  //   technologies: [
+  //     {
+  //       name: "Next.js",
+  //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  //     },
+  //     {
+  //       name: "Framer Motion",
+  //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  //     },
+  //     {
+  //       name: "Tailwind",
+  //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+  //     },
+  //   ],
+  //   githubUrl: "https://github.com/demo/portfolio",
+  //   projectUrl: "https://portfolio-demo.vercel.app",
+  // },
 ];

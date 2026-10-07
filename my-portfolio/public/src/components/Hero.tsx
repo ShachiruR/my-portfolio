@@ -122,7 +122,7 @@ export default function Hero() {
             </div>
           </button>
           <a
-            href="/cv/Shachiru_Rashmika_CV.pdf"
+            href="/assets/myCV.pdf"
             download="Shachiru_Rashmika_CV.pdf"
             className="flex items-center gap-2 rounded-xl bg-white px-6 py-2 text-sm font-semibold text-gray-800 shadow ring-1 ring-purple-100 transition hover:bg-purple-50"
           >
@@ -238,7 +238,7 @@ export default function Hero() {
           value="2+"
           label="Years of Experience"
         />
-        <StatCard
+        {/* <StatCard
           icon={<Users className="h-4 w-4 text-purple-600" />}
           value="20+"
           label="Happy Clients"
@@ -247,7 +247,7 @@ export default function Hero() {
           icon={<Star className="h-4 w-4 text-purple-600" />}
           value="5★"
           label="Average Rating"
-        />
+        /> */}
       </div>
 
       <div className="absolute top-0 left-0 opacity-30">
