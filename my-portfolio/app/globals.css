@@ -12,8 +12,11 @@
   --font-mono: var(--font-geist-mono);
   --font-bilmond: var(--font-bilmond);
   --font-dancingScript: var(--font-dancingScript);
+   --animate-flash-in: flashIn 3s ease-out var(--delay, 0s) infinite;
 
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -179,9 +182,7 @@ body {
   }
 }
 
-.flash-in {
-  animation: flashIn 2s ease-out 6s infinite;
-}
+
 
 @keyframes flashIn {
   

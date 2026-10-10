@@ -97,7 +97,7 @@ export default function Hero() {
             className="
                 h-auto
                 w-[220px]
-             flash-in
+            animate-flash-in [--delay:2s]
                 lg:w-[260px]
               "
           />
@@ -141,7 +141,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute  z-10 left-32 top-42 hidden xl:block  flash-in">
+      <div className="absolute  z-10 left-32 top-42 hidden xl:block animate-flash-in [--delay:0s]">
         <Image
           src="/images/painter.png"
           alt=""
@@ -169,7 +169,7 @@ export default function Hero() {
           </span>
         </div>
       </div>
-      <div className="absolute  z-10 right-32 top-36 hidden xl:block  flash-in">
+      <div className="absolute  z-10 right-32 top-36 hidden xl:block  animate-flash-in [--delay:4s]">
         <Image
           src="/images/tech-arm.png"
           alt=""

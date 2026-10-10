@@ -8,11 +8,6 @@ import YoutubeIcon from "../images/social-icons/youtube-icon.svg";
 
 export const SocialIcons = [
   {
-    icon: FacebookIcon,
-    name: "Facebook",
-    link: "",
-  },
-  {
     icon: InstagramIcon,
     name: "Instagram",
     link: "",

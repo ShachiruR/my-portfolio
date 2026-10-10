@@ -17,7 +17,7 @@ const Bottombar = () => {
 
       <div className="h-[60px] w-full bg-[#150420] flex flex-row items-center justify-center gap-16 px-4">
         <div className="flex flex-row items-center justify-start flex-nowrap gap-8 ">
-          <span className="text-white font-semibold text-[14px] uppercase ">
+          <span className="text-white font-semibold text-[14px] uppercase md:text-nowrap">
             Lets Connect
           </span>
           <div className="flex  flex-row flex-nowrap items-center justify-between text-[16px] gap-2">
@@ -43,7 +43,7 @@ const Bottombar = () => {
 
         <div className="w-px h-3/5 bg-white/30"></div>
         <div className="flex flex-row items-center justify-start flex-nowrap gap-8 ">
-          <span className="text-white font-semibold text-[14px] uppercase ">
+          <span className="text-white font-semibold text-[14px] uppercase  md:text-nowrap">
             Tech I worked with
           </span>
           <div className="flex  flex-row flex-nowrap items-center justify-between text-[16px] gap-4">
