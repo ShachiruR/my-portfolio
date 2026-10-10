@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "Diamond LK",
-    status: "On Live",
+    status: "Completed",
     description:
       "An online jewelry e-commerce platform featuring secure Stripe payments, product browsing, and order management.",
     image: "/images/projects/diamondsLK.png",
@@ -21,8 +21,8 @@ export const projects = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       },
     ],
-    githubUrl: "https://github.com/demo/travel",
-    projectUrl: "https://travel-demo.vercel.app",
+    githubUrl: "https://github.com/ShachiruR/Diamonds-LK",
+    projectUrl: "",
   },
 
   {
@@ -47,8 +47,8 @@ export const projects = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       },
     ],
-    githubUrl: "https://github.com/demo/ecommerce",
-    projectUrl: "https://ecommerce-demo.vercel.app",
+    githubUrl: "",
+    projectUrl: "",
   },
 
   {
@@ -73,8 +73,8 @@ export const projects = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       },
     ],
-    githubUrl: "https://github.com/demo/ai-chat",
-    projectUrl: "https://ai-chat-demo.com",
+    githubUrl: "https://github.com/ShachiruR/pharmacy-management",
+    projectUrl: "",
   },
 
   {
@@ -144,8 +144,8 @@ export const projects = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
       },
     ],
-    githubUrl: "https://github.com/demo/expense",
-    projectUrl: "https://expense-demo.com",
+    githubUrl: "https://github.com/ShachiruR/Expence-Tracker",
+    projectUrl: "",
   },
 
   // {
