@@ -270,6 +270,4 @@ export const projects = [
   //   githubUrl: "https://github.com/demo/portfolio",
   //   projectUrl: "https://portfolio-demo.vercel.app",
   // },
-
-  ,
 ];
