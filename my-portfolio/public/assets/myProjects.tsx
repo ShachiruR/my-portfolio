@@ -105,6 +105,28 @@ export const projects = [
 
   {
     id: 5,
+    title: "Globe Seeker - Country Finder",
+    status: "Completed",
+    description:
+      "A country discovery application that allows users to explore countries and discover information about them through an interactive interface.",
+    image: "/images/projects/globeSeeker.jpeg",
+    tags: ["Travel", "Countries", "Web Application"],
+    technologies: [
+      {
+        name: "React",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        name: "Three js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg",
+      },
+    ],
+    githubUrl: "https://github.com/ShachiruR/GlobeSeeker",
+    projectUrl: "https://globe-seeker.netlify.app/",
+  },
+
+  {
+    id: 6,
     title: "Expense Tracker App",
     status: "Completed",
     description:
@@ -248,4 +270,6 @@ export const projects = [
   //   githubUrl: "https://github.com/demo/portfolio",
   //   projectUrl: "https://portfolio-demo.vercel.app",
   // },
+
+  ,
 ];
