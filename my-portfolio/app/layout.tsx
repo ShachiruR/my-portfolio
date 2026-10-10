@@ -98,7 +98,7 @@ const nura = localFont({
       style: "normal",
     },
     {
-      path: "../Fonts/nura-extralight.ttf",
+      path: "../Fonts/nura-extraLight.ttf",
       weight: "200",
       style: "normal",
     },
