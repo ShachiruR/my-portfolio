@@ -62,11 +62,11 @@ export default function Hero() {
             SHACHIRU
           </h1>
 
-          <div className="font-bilmond text-[#2d004b] font-semibold text-center typewriter">
+          <div className="font-bilmond text-[#2d004b] font-semibold text-center typewriter  text-xs md:text-[18px] ">
             I Build digital experiences that are fast, interactive & impactful
           </div>
           <div
-            className="flex flex-row gap-2 md:gap-4  flex-wrap mt-4 rounded-[20px] items-center justify-center px-6 py-1 text-[14px] text-[#21033d]  bg-linear-to-br
+            className="flex flex-row gap-2 md:gap-4 flex-wrap mt-4 rounded-[20px] items-center justify-center  px-2 md:px-6 py-1 text-[12px] md:text-[14px] text-[#21033d]  bg-linear-to-br
         from-white
         via-purple-100
         to-white font-medium
@@ -114,17 +114,17 @@ export default function Hero() {
                 behavior: "smooth",
               })
             }
-            className=" cursor-pointer flex items-center justify-center gap-2 rounded-xl bg-linear-to-r to-[#6f29ca] from-[#b941f0] px-6 py-2 text-sm ring ring-[#b941f0] font-semibold text-white shadow-lg shadow-purple-300/50 transition hover:brightness-110"
+            className=" cursor-pointer flex items-center justify-center gap-2 rounded-xl bg-linear-to-r to-[#6f29ca] from-[#7e01b8] px-6 py-2 text-sm    font-semibold text-white shadow-md/25 shadow-purple-900  transition hover:brightness-110 hover:shadow-md/55"
           >
             View My Work{" "}
-            <div className="rounded-full h-6 w-6 bg-pink-200/20 flex items-center justify-center">
-              <ArrowUpRight size={12} />
+            <div className="rounded-full h-6 w-6  flex items-center justify-center">
+              <ArrowUpRight size={16} />
             </div>
           </button>
           <a
             href="/assets/myCV.pdf"
             download="Shachiru_Rashmika_CV.pdf"
-            className="flex items-center gap-2 rounded-xl bg-white px-6 py-2 text-sm font-semibold text-gray-800 shadow ring-1 ring-purple-100 transition hover:bg-purple-50"
+            className="flex items-center gap-2 rounded-xl bg-white px-6 py-2 text-sm font-semibold text-gray-800 shadow-md/25 ring-1 ring-purple-100 transition hover:bg-purple-50 hover:shadow-md/55"
           >
             Download CV{" "}
             <div className="rounded-full h-6 w-6 bg-pink-200/20 flex items-center justify-center">
