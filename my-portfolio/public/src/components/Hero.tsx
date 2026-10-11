@@ -213,8 +213,9 @@ export default function Hero() {
             <span className="h-2 w-2 rounded-full bg-purple-700" /> ABOUT ME
           </div>
           <p className="text-[13px] leading-relaxed text-[#1a073d]">
-            Passionate developer who loves turning ideas into functional,
-            beautiful and user-friendly web applications.
+            Passionate full-stack developer and UI/UX designer who loves
+            creating innovative, functional and user-friendly digital
+            experiences.
           </p>
           <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
             <span className="flex items-center gap-1 text-gray-600 text-[12px]">
@@ -235,7 +236,7 @@ export default function Hero() {
         />
         <StatCard
           icon={<Rocket className="h-4 w-4 text-purple-600" />}
-          value="2+"
+          value="3+"
           label="Years of Experience"
         />
         {/* <StatCard

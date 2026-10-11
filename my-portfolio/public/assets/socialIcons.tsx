@@ -17,11 +17,11 @@ export const SocialIcons = [
     name: "WhatsApp",
     link: "https://wa.me/94770453010?text=Hello%20Shachiru,%20I'd%20like%20to%20discuss%20a%20project.",
   },
-  {
-    icon: YoutubeIcon,
-    name: "YouTube",
-    link: "",
-  },
+  // {
+  //   icon: YoutubeIcon,
+  //   name: "YouTube",
+  //   link: "",
+  // },
   {
     icon: PinterestIcon,
     name: "Pinterest",
