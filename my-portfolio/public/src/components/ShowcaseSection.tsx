@@ -40,7 +40,7 @@ const ShowcaseSection: React.FC = () => {
               <span className="text-purple-400 text-[32px]">SHOWCASE</span>
               <br />
             </h2>
-            <p className="text-sm md:text-base leading-relaxed text-gray-300 text-nowrap">
+            <p className="text-sm  md:text-base leading-relaxed text-gray-300 md:text-nowrap">
               Different Technologies Which I have worked with
             </p>
           </div>
@@ -52,6 +52,7 @@ const ShowcaseSection: React.FC = () => {
         <Swiper
           modules={[]}
           slidesPerView="auto"
+          centeredSlides={true}
           spaceBetween={40}
           className=" flex h-full w-full flex-row gap-2"
         >
@@ -100,7 +101,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="relative flex flex-col items-center justify-center">
       <div className="relative z-10 -mb-10">
-        <div className="absolute top-[10px] left-18 z-20 h-37 w-64 overflow-hidden">
+        <div className="absolute top-[10px] left-16 md:left-18 z-20 h-32 md:h-37 w-56 md:w-64 overflow-hidden">
           <Image src={image} alt={title} fill className="object-cover" />
         </div>
 
@@ -109,11 +110,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           alt="Laptop"
           width={260}
           height={260}
-          className="h-auto w-[400px] max-w-none drop-shadow-lg/25"
+          className="h-auto w-[350px] md:w-[400px] max-w-none drop-shadow-lg/25"
         />
       </div>
 
-      <div className="w-full max-w-sm">
+      <div className="w-full max-w-[350px] md:max-w-sm">
         <div className="mx-2 rounded-t-[60px] rounded-b-[30px] bg-linear-to-br from-[#f7f2f8] to-[#ece3f7] px-4 pt-16 pb-16 shadow-xl">
           <div className="mb-3 flex items-start justify-between gap-3">
             <h2 className="text-2xl font-bold text-[#3a1f6b]">{title}</h2>
