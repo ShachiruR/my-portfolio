@@ -147,7 +147,7 @@ const CallCTA: React.FC<CallCTAProps> = ({ logo, href, text }) => {
         {text}
       </span>
 
-      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white transition-colors duration-200 group-hover:bg-neutral-400/70">
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white transition-colors duration-200 group-hover:shadow-md/25">
         <ArrowUpRight className="h-4 w-4 text-[#22013d]" strokeWidth={2.5} />
       </span>
     </a>
