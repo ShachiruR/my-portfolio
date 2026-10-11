@@ -23,7 +23,7 @@ const ContactMeSection: React.FC = () => {
       </div>
       <div className="absolute top-10 left-1/2 -translate-x-1/2 flex flex-row items-start justify-center gap-4">
         <span
-          className="text-[70px] md:text-[120px] font-extrabold  text-transparent
+          className="text-[50px] md:text-[120px] font-extrabold  text-transparent
     [-webkit-text-stroke:1px_white] leading-none"
         >
           CONTACT
@@ -56,8 +56,10 @@ const ContactMeSection: React.FC = () => {
           <div className="grid grid-cols-1 gap-4 relative z-10 my-4">
             {" "}
             <div className="flex flex-row items-center justify-center gap-2">
-              <span className="text-[32px] font-bold ">Feel Free to</span>
-              <span className="text-[36px] font-bold text-[#BEA2FF]">
+              <span className="text-[24px] md:text-[32px] font-bold ">
+                Feel Free to
+              </span>
+              <span className="text-[26px] md:text-[36px] font-bold text-[#BEA2FF]">
                 Contact ME
               </span>
             </div>
@@ -137,13 +139,13 @@ const CallCTA: React.FC<CallCTAProps> = ({ logo, href, text }) => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex min-w-sm items-center gap-3 relative rounded-full bg-[#ffffff7e] backdrop-blur-sm p-2 shadow-lg transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
+      className="group flex flex-row  pl-6 md:pl-2  justify-center md:justify-start min-w-[280px] md:min-w-sm items-center gap-3 relative rounded-full bg-[#ffffff7e] backdrop-blur-sm p-2 shadow-lg transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
     >
       <span className="absolute -left-2 flex h-15 w-15 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-[#6B3584] to-[#290E79] shadow-md shadow-purple-950/40">
         {logo}
       </span>
 
-      <span className="flex-1 text-center text-base font-semibold tracking-wide text-white">
+      <span className="flex-1 text-center text-base font-semibold tracking-wide text-white md:px-0 pl-12">
         {text}
       </span>
 
