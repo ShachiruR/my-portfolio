@@ -168,21 +168,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-1 items-center justify-center gap-2 rounded-full border border-white/15 bg-linear-to-br from-[#1f1f1f] to-[#0f0f0f] px-4 py-3 text-sm font-medium text-white shadow-lg/25 shadow-[#2b2b2b] transition hover:bg-[#201c24]"
+            className="flex flex-1 items-center justify-center gap-2 rounded-full border border-white/15 bg-linear-to-br from-[#1f1f1f] to-[#0f0f0f] px-4  hover:scale-102 py-3 text-sm font-medium text-white shadow-lg/25 shadow-[#2b2b2b] transition hover:bg-[#201c24]"
           >
             Open in GitHub
             <ArrowUpRight className="h-4 w-4" />
           </a>
-
-          <a
-            href={projectUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-1 items-center justify-center gap-2 rounded-full bg-linear-to-r from-[#3d2a63] to-[#8b3fb8] px-4 py-3 text-sm font-medium text-white shadow-lg transition hover:brightness-110"
-          >
-            View Project
-            <ArrowUpRight className="h-4 w-4" />
-          </a>
+          {projectUrl != "" ? (
+            <a
+              href={projectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-1 items-center justify-center gap-2 rounded-full bg-linear-to-r from-[#3d2a63] to-[#8b3fb8] px-4 py-3 text-sm font-medium hover:scale-102 text-white shadow-lg transition hover:brightness-110"
+            >
+              View Project
+              <ArrowUpRight className="h-4 w-4" />
+            </a>
+          ) : null}
         </div>
       </div>
     </div>
